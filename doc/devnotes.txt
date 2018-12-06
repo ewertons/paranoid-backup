@@ -1,0 +1,6 @@
+Write an idea for a distributed diff algorithm that compares files by binary search.
+Each local endpoint creates a hash of the version of the target file.
+Exchange the hash with the controlling endpoint.
+If different, each endpoint divides the file data by two, creates hashes of the parts and exchange again.
+For the parts that are different, repeat step 4 until a minimum list of different parts is obtained.
+
