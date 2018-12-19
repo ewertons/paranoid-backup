@@ -4,10 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Sample (Debug)",
+            "label": "Build All (Debug)",
             "type": "shell",
-            "command": "gcc",   
-            "args":     ["-g", "-Wall", "-v", "-I${workspaceFolder}/inc", "-o${workspaceFolder}/bin/sample", "samples/main.c"],
+            "command": "${workspaceFolder}/build.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -18,7 +17,7 @@
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": true,
-                "clear": false
+                "clear": true
             }
         }
     ]

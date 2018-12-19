@@ -19,7 +19,7 @@ typedef struct STORAGE_ENDPOINT_STRUCT
     STORAGE_ENDPOINT_HOST host;
     char* path;
     size_t max_size_in_mbytes;
-    STORAGE_ENDPOINT* next;  
+    struct STORAGE_ENDPOINT_STRUCT* next;  
 } STORAGE_ENDPOINT;
 
 STORAGE_ENDPOINT* storage_endpoint_get_list();

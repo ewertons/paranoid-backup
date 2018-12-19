@@ -4,13 +4,12 @@
 
 int main(int argc, char** argv)
 {
+    (void)argc;
+    (void)argv;
     // pb_init();
     // pb_init_from_config("./paranoid_backup.config");
 
-    // pb_get_storage_endpoints();
-    // pb_add_storage_endpoint();
-    // pb_remove_storage_endpoint();
-    // pb_update_storage_endpoint();
+
 
     // pb_start_storage_endpoint(1234);
     // pb_stop_storage_endpoint(1234);

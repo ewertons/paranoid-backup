@@ -1,11 +1,12 @@
 // Copyright (c) 2018 Scaboro da Silva, Ewerton. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#include "pb_logger.h"
+#include "logging.h"
 #include <stdarg.h>
 #include <time.h>
+#include <stdio.h>
 
-void log(LOGGING_LEVEL level, const char* format, ...)
+void log_entry(LOGGING_LEVEL level, const char* format, ...)
 {
     time_t now;
     va_list args;
